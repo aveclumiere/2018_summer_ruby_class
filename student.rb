@@ -9,6 +9,9 @@ class Student < Person
   def initialize(name, age, grade, gender = nil)
     super(name,age,gender)
     @grade = grade
+
+#puts "#{}번째 학생의 정보는 아래와 같습니다"
+
     # 매번 새로운 인스턴스가 생성될 때마다 인원 수를 증가 시켜야 합니다.
     # 따라서, 여기에 어떤 코드가 한줄 들어가야 합니다.
   end
@@ -18,7 +21,14 @@ class Student < Person
   end
 
   def print_student_info
+
+      students.each do |std|
+puts "#{std}"
+end
     # 이름, 나이 학년이 한줄씩 출력되도록 코드를 작성해주세요.
+if gender == nil
+puts '불명'
+end
     # 만약 성별이 nil인 경우에는 성별이 불명이라고 출력되도록 해주세요.
   end
 end
