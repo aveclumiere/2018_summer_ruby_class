@@ -22,7 +22,7 @@ class Student < Person
 
   def print_student_info
 
-      students.each do |std|
+students.each do |std|
 puts "#{std}"
 end
     # 이름, 나이 학년이 한줄씩 출력되도록 코드를 작성해주세요.
